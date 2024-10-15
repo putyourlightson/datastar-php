@@ -1,6 +1,6 @@
 # Datastar PHP
 
-A set of PHP helper classes for working with Datastar with zero dependencies.
+A set of PHP helper classes for working with [Datastar](https://data-star.dev/), with zero dependencies.
 
 ## License
 
@@ -12,7 +12,7 @@ This plugin requires PHP 8.0.0 or later.
 
 ## Installation
 
-Install using composer.
+Install using composer or download and require the classes manually.
 
 ```shell
 composer require putyourlightson/datastar-php
@@ -48,8 +48,10 @@ use putyourlightson\datastar\DatastarResponse;
 
 $response = new DatastarResponse();
 
-// Sends the Datastar event output to the browser.
-$response->sendEvent($event);
+// Sends Datastar events to the browser.
+$response->sendEvent($event1);
+$response->sendEvent($event2);
+$response->sendEvent($event3);
 ```
 
 ---
