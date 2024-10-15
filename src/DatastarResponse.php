@@ -42,7 +42,7 @@ class DatastarResponse
             return;
         }
 
-        ob_get_clean();
+        ob_clean();
         echo $output;
         ob_flush();
         flush();
