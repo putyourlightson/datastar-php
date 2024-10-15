@@ -1,0 +1,33 @@
+{
+  "name": "putyourlightson/datastar-php",
+  "description": "A set of PHP helper classes for working with Datastar.",
+  "version": "0.0.1",
+  "type": "library",
+  "license": "mit",
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "craftcms/ecs": "dev-main",
+    "craftcms/phpstan": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "putyourlightson\\datastar\\": "src/"
+    }
+  },
+  "scripts": {
+    "phpstan": "phpstan --ansi --memory-limit=1G",
+    "check-cs": "ecs check --ansi",
+    "fix-cs": "ecs check --fix --ansi"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "support": {
+    "docs": "https://github.com/putyourlightson/datastar-php",
+    "source": "https://github.com/putyourlightson/datastar-php",
+    "issues": "https://github.com/putyourlightson/datastar-php/issues"
+  }
+}
