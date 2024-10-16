@@ -12,8 +12,6 @@ class RedirectEvent implements EventInterface
 {
     use EventTrait;
 
-    public string $content = '';
-
     /**
      * @inerhitdoc
      */

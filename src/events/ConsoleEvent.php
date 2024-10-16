@@ -12,8 +12,6 @@ class ConsoleEvent implements EventInterface
 {
     use EventTrait;
 
-    public string $content = '';
-
     /**
      * @inerhitdoc
      */
