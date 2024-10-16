@@ -47,4 +47,12 @@ class DatastarResponse
         ob_flush();
         flush();
     }
+
+    /**
+     * Ends the request.
+     */
+    public function end(): void
+    {
+        exit();
+    }
 }
