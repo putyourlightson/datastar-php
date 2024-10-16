@@ -5,6 +5,8 @@
 
 namespace putyourlightson\datastar;
 
+use putyourlightson\datastar\events\EventInterface;
+
 /**
  * A Datastar response class.
  */
@@ -34,7 +36,7 @@ class DatastarResponse
     /**
      * Sends a Datastar event.
      */
-    public function sendEvent(DatastarEvent $event): void
+    public function sendEvent(EventInterface $event): void
     {
         $output = $event->getOutput();
 

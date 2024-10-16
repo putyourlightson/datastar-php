@@ -1,7 +1,7 @@
 {
   "name": "putyourlightson/datastar-php",
   "description": "A set of PHP helper classes for working with Datastar.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "library",
   "license": "mit",
   "require": {
