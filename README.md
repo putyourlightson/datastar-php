@@ -52,6 +52,9 @@ $response = new DatastarResponse();
 $response->sendEvent($event1);
 $response->sendEvent($event2);
 $response->sendEvent($event3);
+
+// Ends the response and closes the connection.
+$response->end();
 ```
 
 ---
