@@ -12,6 +12,7 @@ class FragmentEvent implements EventInterface
 {
     use EventTrait;
 
+    public string $content = '';
     public ?string $selector = null;
     public ?string $merge = null;
     public ?string $settle = null;

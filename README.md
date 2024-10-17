@@ -29,44 +29,37 @@ use putyourlightson\datastar\events\DeleteEvent;
 use putyourlightson\datastar\events\RedirectEvent;
 use putyourlightson\datastar\events\ConsoleEvent;
 
-$event = new FragmentEvent([
-    'type' => 'fragment',
-    'content' => '<div id="primary">New content</div>',
-    // Optional
-    'id' => 1,
-    'selector' => '#secondary',
-    'merge' => 'morph',
-    'settle' => '100',
-    'vt' => 'false',
-]);
+$event = new FragmentEvent();
+$event->content = '<div id="primary">New content</div>';
+// Optional
+$event->id = 1;
+$event->selector = '#secondary';
+$event->merge = 'morph';
+$event->settle = 100;
+$event->vt = false;
 
-$event = new SignalEvent([
-    'store' => '{foo: "bar"}',
-    // Optional
-    'id' => 1,
-    'ifmissing' => 'true',
-]);
+$event = new SignalEvent();
+$event->store = '{foo: "bar"}';
+// Optional
+$event->id = 1;
+$event->ifmissing = 'true';
 
-$event = new DeleteEvent([
-    'selector' => '#primary',
-    // Optional
-    'id' => 1,
-]);
+$event = new DeleteEvent();
+$event->selector = '#primary';
+// Optional
+$event->id = 1;
 
-$event = new RedirectEvent([
-    'content' => '/new-url',
-    // Optional
-    'id' => 1,
-]);
+$event = new RedirectEvent();
+$event->content = '/new-url';
+// Optional
+$event->id = 1;
 
-$event = new ConsoleEvent([
-    
-    'content' => 'log Hello world',
-    // Optional
-    'id' => 1,
-]);
+$event = new ConsoleEvent();
+$event->content = 'log Hello world';
+// Optional
+$event->id = 1;
 
-// Returns the output of the Datastar event.
+// Returns the output of a Datastar event.
 $output = $event->getOutput();
 ```
 

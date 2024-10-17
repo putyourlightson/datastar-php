@@ -11,14 +11,6 @@ namespace putyourlightson\datastar\events;
 trait EventTrait
 {
     public ?int $id = null;
-    public string $content = '';
-
-    public function __construct(array $config = [])
-    {
-        foreach ($config as $key => $value) {
-            $this->{$key} = $value;
-        }
-    }
 
     public function getEventOutput(string $name, array $input): string
     {
