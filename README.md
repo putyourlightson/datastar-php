@@ -8,7 +8,7 @@ This plugin is licensed for free under the MIT License.
 
 ## Requirements
 
-This plugin requires Datastar 0.19.0 or later and PHP 8.0.0 or later.
+This plugin requires Datastar 0.19.3 or later and PHP 8.0.0 or later.
 
 ## Installation
 
@@ -55,9 +55,10 @@ $event->content = '/new-url';
 $event->id = 1;
 
 $event = new ConsoleEvent();
-$event->content = 'log Hello world';
+$event->content = 'Hello world';
 // Optional
 $event->id = 1;
+$event->mode = 'error';
 
 // Returns the output of a Datastar event.
 $output = $event->getOutput();

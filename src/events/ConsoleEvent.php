@@ -13,14 +13,15 @@ class ConsoleEvent implements EventInterface
     use EventTrait;
 
     public string $content = '';
+    public string $mode = 'log';
 
     /**
      * @inerhitdoc
      */
     public function getOutput(): string
     {
-        $output = ['data: ' . $this->content];
+        $output = ['data: ' . $this->mode . ' ' . $this->content];
 
-        return $this->getEventOutput('redirect', $output);
+        return $this->getEventOutput('console', $output);
     }
 }

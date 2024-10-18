@@ -21,6 +21,6 @@ class DeleteEvent implements EventInterface
     {
         $output = ['data: selector ' . $this->selector];
 
-        return $this->getEventOutput('redirect', $output);
+        return $this->getEventOutput('delete', $output);
     }
 }
