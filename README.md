@@ -36,7 +36,7 @@ $event->id = 1;
 $event->selector = '#secondary';
 $event->merge = 'morph';
 $event->settle = 100;
-$event->vt = false;
+$event->vt = 'false';
 
 $event = new SignalEvent();
 $event->store = '{foo: "bar"}';
