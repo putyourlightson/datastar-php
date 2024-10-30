@@ -12,7 +12,7 @@ class SignalEvent implements EventInterface
 {
     use EventTrait;
 
-    public ?string $ifmissing = null;
+    public ?string $onlyIfMissing = null;
     public string $store = '';
 
     /**
@@ -21,8 +21,8 @@ class SignalEvent implements EventInterface
     public function getOutput(): string
     {
         $output = [];
-        if ($this->ifmissing !== null) {
-            $output[] = 'data: ifmissing ' . $this->ifmissing;
+        if ($this->onlyIfMissing !== null) {
+            $output[] = 'data: onlyIfMissing ' . $this->onlyIfMissing;
         }
         $output[] = 'data: store ' . $this->store;
 

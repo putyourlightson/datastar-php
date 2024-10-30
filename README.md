@@ -1,6 +1,6 @@
 # Datastar PHP
 
-A set of PHP helper classes for working with [Datastar](https://data-star.dev/), with zero package dependencies.
+A dependency-free set of PHP helper classes for working with [Datastar](https://data-star.dev/).
 
 ## License
 
@@ -42,7 +42,7 @@ $event = new SignalEvent();
 $event->store = '{foo: "bar"}';
 // Optional
 $event->id = 1;
-$event->ifmissing = 'true';
+$event->onlyIfMissing = 'true';
 
 $event = new DeleteEvent();
 $event->selector = '#primary';
