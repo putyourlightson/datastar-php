@@ -15,8 +15,6 @@ class DatastarResponse
     public function __construct()
     {
         $this->sendHeaders();
-
-        ob_start();
     }
 
     /**
@@ -31,6 +29,10 @@ class DatastarResponse
         header('Content-Type: text/event-stream');
         header('Cache-Control: no-cache');
         header('Connection: keep-alive');
+
+        // Disable buffering for Nginx
+        // https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_buffering
+        header('X-Accel-Buffering: no');
     }
 
     /**
