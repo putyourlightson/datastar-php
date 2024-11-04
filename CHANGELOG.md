@@ -1,5 +1,11 @@
 # Release Notes for Datastar PHP
 
+## 1.0.2 - 2024-11-04
+
+### Changed
+
+- A header is now sent to disable buffering for Nginx.
+
 ## 1.0.1 - 2024-10-30
 
 ### Fixed
