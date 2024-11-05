@@ -1,5 +1,11 @@
 # Release Notes for Datastar PHP
 
+## 1.0.3 - 2024-11-05
+
+### Fixed
+
+- Fixed the `redirect` event.
+
 ## 1.0.2 - 2024-11-04
 
 ### Changed

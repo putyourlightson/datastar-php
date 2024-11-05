@@ -19,7 +19,7 @@ class RedirectEvent implements EventInterface
      */
     public function getOutput(): string
     {
-        $output = ['data: ' . $this->content];
+        $output = ['data: url ' . $this->content];
 
         return $this->getEventOutput('redirect', $output);
     }
